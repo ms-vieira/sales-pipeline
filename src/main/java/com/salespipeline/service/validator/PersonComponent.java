@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class PersonComponent {
-    private final PersonRepository repository;
+  private final PersonRepository repository;
 
-    public Person find(final String name) {
-        log.info("M=find, Find by name = {}", name);
-        return repository.findByName(name);
-    }
+  public Person find(final String name) {
+    log.info("M=find, Find by name = {}", name);
+    return repository.findByName(name);
+  }
 }

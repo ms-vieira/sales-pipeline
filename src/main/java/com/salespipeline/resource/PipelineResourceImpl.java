@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class PipelineResourceImpl implements PipelineResource {
-    private final PipelineService service;
+  private final PipelineService service;
 
-    @Override
-    public PipelineResponse converter(final String name) throws InterruptedException {
-        log.info("M=converter, Converting the = {}", name);
-        return new PipelineResponse(service.execute(name));
-    }
+  @Override
+  public PipelineResponse converter(final String name) throws InterruptedException {
+    log.info("M=converter, Converting the = {}", name);
+    return new PipelineResponse(service.execute(name));
+  }
 }

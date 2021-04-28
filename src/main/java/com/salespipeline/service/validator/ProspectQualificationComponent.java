@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class ProspectQualificationComponent {
-    private final ProspectQualification prospectQualification;
+  private final ProspectQualification prospectQualification;
 
-    public ProspectQualificationResponse satisfactoryScore(final VerifyPersonResponse verifyPersonResponse,
-                                                           final JudicialResponse judicialResponse) {
-        log.info("M=satisfactoryScore, Fetching the scorre={} ", verifyPersonResponse);
-        return prospectQualification.satisfactoryScore(new ProspectQualificationRequest(verifyPersonResponse, judicialResponse));
-    }
-
+  public ProspectQualificationResponse satisfactoryScore(
+      final VerifyPersonResponse verifyPersonResponse, final JudicialResponse judicialResponse) {
+    log.info("M=satisfactoryScore, Fetching the scorre={} ", verifyPersonResponse);
+    return prospectQualification.satisfactoryScore(
+        new ProspectQualificationRequest(verifyPersonResponse, judicialResponse));
+  }
 }

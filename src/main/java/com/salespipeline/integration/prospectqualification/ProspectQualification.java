@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProspectQualification {
 
-    public ProspectQualificationResponse satisfactoryScore(final ProspectQualificationRequest request) {
-        return new ProspectQualificationResponse();
-    }
+  public ProspectQualificationResponse satisfactoryScore(
+      final ProspectQualificationRequest request) {
+    return new ProspectQualificationResponse();
+  }
 }

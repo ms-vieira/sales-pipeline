@@ -13,12 +13,11 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class JudicialComponent {
-    private final JudicialRecords judicialRecords;
+  private final JudicialRecords judicialRecords;
 
-    @Async
-    public JudicialResponse hasJudicialRecord(final Person person) throws InterruptedException {
-        log.info("M=hasJudicialRecord, Has judicial record = {}", person);
-        return judicialRecords.hasJudicialRecord(new JudicialRequest(person));
-    }
-
+  @Async
+  public JudicialResponse hasJudicialRecord(final Person person) throws InterruptedException {
+    log.info("M=hasJudicialRecord, Has judicial record = {}", person);
+    return judicialRecords.hasJudicialRecord(new JudicialRequest(person));
+  }
 }

@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class NationalRegistryIdentification {
 
-    public VerifyPersonResponse exists(final VerifyPersonRequest request)
-            throws InterruptedException {
-        Thread.sleep(200L);
-        return new VerifyPersonResponse(request);
-    }
+  public VerifyPersonResponse exists(final VerifyPersonRequest request)
+      throws InterruptedException {
+    Thread.sleep(200L);
+    return new VerifyPersonResponse(request);
+  }
 }

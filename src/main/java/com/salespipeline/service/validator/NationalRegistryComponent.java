@@ -13,11 +13,11 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class NationalRegistryComponent {
-    private final NationalRegistryIdentification nationalRegistryIdentification;
+  private final NationalRegistryIdentification nationalRegistryIdentification;
 
-    @Async
-    public VerifyPersonResponse exists(final Person person) throws InterruptedException {
-        log.info("M=exists, Exists in national registry identification = {}", person);
-        return nationalRegistryIdentification.exists(new VerifyPersonRequest(person));
-    }
+  @Async
+  public VerifyPersonResponse exists(final Person person) throws InterruptedException {
+    log.info("M=exists, Exists in national registry identification = {}", person);
+    return nationalRegistryIdentification.exists(new VerifyPersonRequest(person));
+  }
 }
