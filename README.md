@@ -2,7 +2,6 @@
 ## _Sales pipeline_
 
 [![Build Status](https://travis-ci.com/ms-vieira/sales-pipeline.svg?token=26erj8ReictAxUzuchaR&branch=master)](https://travis-ci.com/ms-vieira/sales-pipeline)
-
 [![codecov](https://codecov.io/gh/ms-vieira/sales-pipeline/branch/master/graph/badge.svg?token=49B4JH4B0G)](https://codecov.io/gh/ms-vieira/sales-pipeline)
 
 Basic sales pipeline service, where leads can convert into potential customers, simulating integrations between other services and returning the customer's status, converted or not.
