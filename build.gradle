@@ -8,6 +8,9 @@ group = 'com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
@@ -38,3 +41,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
+check.dependsOn jacocoTestReport
